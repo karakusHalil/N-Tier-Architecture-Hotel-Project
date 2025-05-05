@@ -2,7 +2,7 @@
 {
     public class Subscribe
     {
-        public int SubscriibeID { get; set; }
+        public int SubscribeID { get; set; }
         public string Mail { get; set; }
     }
 }
