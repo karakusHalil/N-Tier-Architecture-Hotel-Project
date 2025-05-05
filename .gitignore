@@ -1,0 +1,42 @@
+# User-specific files
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build Folders
+bin/
+obj/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# User-specific files (Windows)
+*.user
+*.userosscache
+*.suo
+*.userprefs
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# JetBrains Rider
+.idea/
+
+# User-specific files (Visual Studio for Mac)
+.vscode/
+
+# Node.js modules (if you have a Node.js project)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# NuGet package files
+*.nupkg
+
+# ASP.NET Core
+project.lock.json
+project.fragment.lock.json
