@@ -1,4 +1,5 @@
 ﻿using HotelProject.BusinessLayer.Abstract;
+using HotelProject.EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelProject.WebApi.Controllers
@@ -21,8 +22,9 @@ namespace HotelProject.WebApi.Controllers
             return Ok(values);
         }
         [HttpPost]
-        public IActionResult AddStaff()
+        public IActionResult AddStaff(Staff staff)
         {
+            _staffService.TInsert(staff);
             return Ok("Add Staff");
         }
         [HttpDelete]
