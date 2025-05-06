@@ -5,7 +5,7 @@
 namespace HotelProject.DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class mig1 : Migration
+    public partial class Mig1 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -49,7 +49,8 @@ namespace HotelProject.DataAccessLayer.Migrations
                 name: "Staffs",
                 columns: table => new
                 {
-                    StaffID = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    StaffID = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     SocialMedia1 = table.Column<string>(type: "nvarchar(max)", nullable: false),

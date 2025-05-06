@@ -92,8 +92,11 @@ namespace HotelProject.DataAccessLayer.Migrations
 
             modelBuilder.Entity("HotelProject.EntityLayer.Concrete.Staff", b =>
                 {
-                    b.Property<string>("StaffID")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("StaffID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StaffID"));
 
                     b.Property<string>("Name")
                         .IsRequired()
